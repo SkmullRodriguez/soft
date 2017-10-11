@@ -1,0 +1,309 @@
+*Reseteamos los estilos de margin y padding*
+{
+	margin: 0;
+	padding: 0;
+}
+
+header, footer, aside, nav, article{
+	display: block;
+}
+@font-face{
+	font-family: hola;
+	src:url(fuente/Tobec.ttf);
+	
+}
+h1{
+	font-family: hola;
+	
+}
+
+
+body{
+	margin: 0 auto;
+	width: 940px;
+	font: 13px/22px Helvetica, Arial, sans-serif;
+	background:	#f0f0f0;
+}
+
+h2{
+	font-size: 28px;
+	line-height: 44px;
+	padding: 22px 0;
+}
+
+h3{
+	font-size: 18px;
+	line-height: 22px;
+	padding: 11px 0;
+}
+
+p{
+	padding-bottom: 22px;
+	text-align:justify;
+}
+
+nav{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background:#ffe536;	
+}
+
+nav ul{
+	margin: 0 auto;
+	width: 1000px;
+	list-style: none;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	display: block;
+	margin-right: 20px;
+	width: 140px;
+	font-size: 14px;
+	line-height: 44px;
+	text-align: center;
+	text-decoration: none;
+	color:	#777;
+}
+
+nav ul li a:hover{
+	color:	#fff;
+}
+
+nav ul li.selected a{
+	color:#fff;
+}
+
+nav ul li.subscribe a{
+	margin-left: 22px;
+	padding-left: 33px;
+	text-align: left;
+	background:url("../images/rss.png")left center no-repeat;
+}
+
+#intro{
+	margin-top: 66px;
+	padding: 44px;
+	background:#202020 url("../images/introo.png")repeat-x;
+	border-radius: 22px;
+	-webkit-background-size:100%;
+	-o-background-size:100%;
+	-khtml-background-size:100%;
+	-moz-border-radius:22px;
+	-webkit-border-radius:22px;
+}
+
+#intro h2, #intro p{
+	position: relative;
+	z-index: 9999;
+	width: 336px;
+}
+
+#intro h2{
+	padding: 0 0 22px 0;
+	font-weight: normal;
+	color: #ff0000;
+}
+
+#intro p{
+	padding: 0;
+	color: #ffffff;
+}
+
+#intro img{
+	position: absolute;
+	top: 128px;
+	left: 37%;
+	width: 646px;
+	height: 242px;
+}
+
+#content{
+	display: table;
+}
+#maincontent{
+	display: table-cell;
+	width: 620px;
+	padding-right: 22px;
+}
+aside{
+	display:table-cell;
+	width:300px;
+}
+
+
+/*--------------------------------------
+=blog post
+--------------------------------------*/
+
+.blogsPot header p, .blogsPot header p a{
+	font-size: 14px;
+	font-style: italic;
+	color: #777;
+}	
+	.blogsPot header p a:hover{
+		text-decoration: none;
+		color: #000;
+	}
+.blogsPot div{
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-gap: 22px;
+	-webkit-column-gap: 22px;
+}
+.blogsPot img{
+	margin: 22px 0;
+	-webkit-box-shadow:3px 3px 7px #777;
+}
+.borde{
+	font-family:NoPosWoW;
+	borde:3px solid #000;
+	padding:10px;
+	width:300px;
+	height:50px;
+	background-color:red;
+	border-radius:10px 10px 0px 0px;
+	font-family:hola;
+	
+}
+.fondo{
+	borde: 3px solid #888;
+	width:300px;
+	height:300px;
+	padding:10px;
+	background:url(images/marcos.png),url(images/cuadros.png),url(images/fondo.png);
+	background-repeat:no-repeat;
+	background-size:320px 320px;
+}
+
+
+#comments{
+	margin-top: 21px;
+	padding-top: 22px;
+	border-top: 1px solid #d7d7d7;
+}
+	#comments article{
+		display: table;
+		padding: 22px;
+	}
+	#comments article:nth-child(odd){
+		padding: 21px;
+		background: #E3E3E3;
+		border: 1px solid #d7d7d7;
+		-moz-border-radius:11px;
+	    -wenkit-border-radius:11px;
+	}
+	#comments article header{
+		display: table-cell;
+		width: 220px;
+		padding-right: 22px;
+	}
+	#commets article header a{
+		display: block;
+		font-weight: bold;
+		color: #000;
+	}
+		#comments article header a:hover{
+			text-decoration: none;
+		}
+	#commets article p{
+		padding: 0;
+	}
+
+form{
+	margin-top: 21px;
+	padding-top: 22px;
+	border-top: 1px solid #d7d7d7;
+}
+form p {
+	display: table;
+	margin-bottom: 22px;
+	padding: 0 22px;
+}
+form label{
+	display: table-cell;
+	width: 140px;
+	padding-right: 22px;
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+form input[type='text'], form input[type='email'], form input[type='url']{
+	display: table-cell;
+	width: 300px;
+	height: 20px;
+	border: 1px solid #d7d7d7;
+}		
+textarea{
+	width: 300px;
+	height: 100px;
+	border: 1px solid #d7d7d7; 
+}
+form input[type='submit']{
+	margin-left: 162px;
+}
+aside{
+	display: table-cell;
+	width: 300px;
+}
+aside section{
+	margin: 22px 0 0 22px;
+	padding: 11px 22px;
+	background: url("../images/sidebar.png") repeat-x;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+}
+aside section ul{
+	margin: 0 0 0 22px;
+	list-style: none;
+}
+aside section ul li a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+aside section ul li  a:hover{
+	text-decoration: underline;
+}
+footer{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #222;
+}
+	footer div{
+		display: table;
+		margin: 0 auto;
+		padding:44px 0;
+		width: 940px;
+		color: #777;
+	}
+		footer div section{
+			display: table-cell;
+			width: 300px;
+		}
+		footer div #about, footer div #blogroll{
+			padding-right: 20px;
+		}
+	footer h3 {
+		color:#fff;
+	}
+	footer a {
+		color:	#999;
+	}
+		footer a:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+footer ul{
+	margin: 0 0 0 40px;
+	list-style: square;
+	color: #565656;
+}
+	footer ul li a{
+		display: block;
+	}
